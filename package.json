@@ -18,7 +18,7 @@
     "performance": "node --allow-natives-syntax --prof ./node_modules/mocha/bin/_mocha ./exe/**/*.spec.js"
   },
   "dependencies": {
-    "sandbox": "https://github.com/ccaavvaa/sandbox.git"
+    "sandbox": "git+https://github.com/ccaavvaa/sandbox.git"
   },
   "devDependencies": {
     "@types/chai": "latest",
