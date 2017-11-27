@@ -1590,7 +1590,7 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
 
 "sandbox@git+https://github.com/ccaavvaa/sandbox.git":
   version "0.0.1"
-  resolved "git+https://github.com/ccaavvaa/sandbox.git#aed405740196bca5eca5a2e47b634f4951d87878"
+  resolved "git+https://github.com/ccaavvaa/sandbox.git#9baa7032ab17193cecaf534c1bf3e708852e02d5"
 
 semver@^4.1.0:
   version "4.3.6"
