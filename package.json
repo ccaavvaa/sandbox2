@@ -17,7 +17,9 @@
     "test": "gulp test",
     "performance": "node --allow-natives-syntax --prof ./node_modules/mocha/bin/_mocha ./exe/**/*.spec.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "sandbox": "https://github.com/ccaavvaa/sandbox.git"
+  },
   "devDependencies": {
     "@types/chai": "latest",
     "@types/mocha": "latest",
