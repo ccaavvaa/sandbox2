@@ -1,16 +1,26 @@
+import * as fs from 'fs';
+import * as path from 'path';
 // tslint:disable-next-line:no-implicit-dependencies
 import 'mocha';
+const myTestToDebug = fs.existsSync(path.join(__dirname, 'my-debug-test.js')) ?
+    // tslint:disable-next-line:no-var-requires
+    require('./my-debug-test').testToDebug : null;
+
 // to debug all:
 // const testToDebug: string = null;
 // to test only test 'y' in suite 'x':
 // const testToDebug = 'x y';
 // ex:
-const testToDebug: string = 'MyError';
+// const testToDebug: string = 'Test_Resa get_all_pages';
+// const testToDebug: string = 'Test_Resa get_all_pages_save';
+
+const testToDebug: string = myTestToDebug || 'Typologie_lot_post_equals_get';
 
 beforeEach(function () {
     // tslint:disable-next-line:no-this-assignment
     const that: any = this;
-    if (process.env.DEBUG_TEST === 'true' && testToDebug) {
+    // tslint:disable-next-line:no-string-literal
+    if (process.env['DEBUG_TEST'] === 'true' && testToDebug) {
         const fullTestTitle = getFullTitle(that.currentTest);
         if (fullTestTitle.search(testToDebug) < 0) {
             this.skip();

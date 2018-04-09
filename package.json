@@ -35,6 +35,7 @@
     "gulp-tslint": "latest",
     "gulp-typescript": "latest",
     "merge2": "latest",
+    "mocha": "^5.0.5",
     "source-map-support": "latest",
     "tslint": "latest",
     "typescript": "latest"

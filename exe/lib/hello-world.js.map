@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/lib/hello-world.ts"],"names":[],"mappings":";;AAAA;IACW,QAAQ,CAAC,IAAY;QACxB,MAAM,CAAC,SAAS,IAAI,EAAE,CAAC;IAC3B,CAAC;CACJ;AAJD,gCAIC","file":"hello-world.js","sourcesContent":["export class HelloWorld {\r\n    public sayHello(name: string): string {\r\n        return `Hello ${name}`;\r\n    }\r\n}\r\n"]}
